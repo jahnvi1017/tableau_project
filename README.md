@@ -10,13 +10,11 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 
 ![Per_pop_Inf](https://github.com/jahnvi1017/tableau_project/assets/168184461/4294415a-bc03-4923-b2f5-7fd3023fb8ab)
 
-![Per_pop_Inf](https://github.com/jahnvi1017/tableau_project/assets/168184461/fd90b5ca-ce15-4131-bab2-684cd41d04a3)
 
 ### 2. Which continent has the highest death count?
 
-![Highest death count](https://github.com/jahnvi1017/tableau_project/assets/168184461/319a4154-5cea-4b63-bd68-08c06883ebd5)
+![Highest death count](https://github.com/jahnvi1017/tableau_project/assets/168184461/0ae4b074-ccc9-4293-aaf1-7a87e0e0f26b)
 
-![Highest death count](https://github.com/jahnvi1017/tableau_project/assets/168184461/499bb67a-4c96-474e-a381-d7d596f3557a)
 
 ### 3.Which continents have the most cases, deaths, and vaccinations?
 
