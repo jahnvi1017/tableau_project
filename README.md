@@ -27,10 +27,15 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 
 ### 5. Top 10 countries which have the highest death per population percentage.
 
+![Screenshot 2024-04-27 172423](https://github.com/jahnvi1017/tableau_project/assets/168184461/d55e8a68-bf9f-4e35-b7e0-c1fa71bfbc89)
+
 ![Top_10](https://github.com/jahnvi1017/tableau_project/assets/168184461/2b7584db-37f6-46e7-a8b4-dedf392a980c)
 
 
 ### 6. Top 3 Countries in each continent that have the highest percentage of total cases by population.
+
+![Screenshot 2024-04-27 172306](https://github.com/jahnvi1017/tableau_project/assets/168184461/f4271c61-9b13-4fd9-8363-4760b4042f6a)
+
 
 ![Top_3](https://github.com/jahnvi1017/tableau_project/assets/168184461/0b5b96a0-8af7-4ceb-a5b7-960d8bc5fc57)
 
