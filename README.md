@@ -36,12 +36,11 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 
 ### 7.The map which shows the infected percentage by countries.
 
-![Screenshot 2024-04-27 171100](https://github.com/jahnvi1017/tableau_project/assets/168184461/e9823181-d6ca-43e0-ae24-907dacbc9926)
+![Inf_perc](https://github.com/jahnvi1017/tableau_project/assets/168184461/e9823181-d6ca-43e0-ae24-907dacbc9926)
 
-![Inf_perc](https://github.com/jahnvi1017/tableau_project/assets/168184461/09015992-2890-4e24-8ba7-8581b8adeede)
 
 ### 8. The map which shows deaths in the year 2021 by countries.
-![Screenshot 2024-04-27 170855](https://github.com/jahnvi1017/tableau_project/assets/168184461/9e137abf-3e5a-4aa7-95b4-82bd10141d8f)
+![Deaths_2021](https://github.com/jahnvi1017/tableau_project/assets/168184461/9e137abf-3e5a-4aa7-95b4-82bd10141d8f)
 - [ ] (2020)
 - [x] (2021)
-![Deaths_2021](https://github.com/jahnvi1017/tableau_project/assets/168184461/7cffab6e-6056-4843-8f23-40f229b2a3b0)
+
