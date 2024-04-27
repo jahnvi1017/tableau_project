@@ -41,11 +41,12 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 
 
 ### 8. The map which shows deaths in the year 2021 by countries.
-![Screenshot 2024-04-27 175130](https://github.com/jahnvi1017/tableau_project/assets/168184461/233e2a41-4d8a-4b05-93dd-e879ba7f4ca3)
+![Deaths_2020](https://github.com/jahnvi1017/tableau_project/assets/168184461/233e2a41-4d8a-4b05-93dd-e879ba7f4ca3)
 - [x] (2020)
 - [ ] (2021)
 
-![Deaths_2021](https://github.com/jahnvi1017/tableau_project/assets/168184461/9e137abf-3e5a-4aa7-95b4-82bd10141d8f)
+![Deaths_2021](https://github.com/jahnvi1017/tableau_project/assets/168184461/dfbf94e2-f18a-4c51-bc4c-6333c258a9fa)
+
 - [ ] (2020)
 - [x] (2021)
 
