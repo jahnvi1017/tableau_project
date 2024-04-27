@@ -21,7 +21,9 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 
 ### 4. Which month has the highest and lowest percentage of infected people in India in the year 2020?
 
-![Inf_pep_india](https://github.com/jahnvi1017/tableau_project/assets/168184461/9bf9dfd1-4779-4bfd-a4ab-aebe75202cf4)
+![Inf_pep_india](https://github.com/jahnvi1017/tableau_project/assets/168184461/e323e96a-4fa4-49ed-9aa4-d07c9f28e5ec)
+
+
 
 ### 5. Top 10 countries which have the highest death per population percentage.
 
