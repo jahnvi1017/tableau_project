@@ -1,4 +1,4 @@
-# Covid-19 Tableau + SQl Project
+# Covid-19 Tableau + SQL Project
 
 # Tableau Visualizations
 
