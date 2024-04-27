@@ -68,7 +68,7 @@ FROM coviddeaths
 WHERE continent IS NOT NULL;
 ```
 
-OUTPUT:
+**OUTPUT:**
 
 ![Screenshot 2024-04-27 181449](https://github.com/jahnvi1017/tableau_project/assets/168184461/75fbd589-ac6b-455f-b4f9-38303a911f8b)
 
@@ -84,7 +84,7 @@ FROM covidvaccinations
 WHERE continent IS NOT NULL;
 ```
 
-OUTPUT:
+**OUTPUT:**
 
 ![Screenshot 2024-04-27 213914](https://github.com/jahnvi1017/tableau_project/assets/168184461/3503b255-dd34-4809-8c5a-ea2e9fac8356)
 
@@ -103,7 +103,7 @@ Group by continent
 order by hightestDeathCount desc;
 ```
 
-OUTPUT:
+**OUTPUT:**
 
 ![Screenshot 2024-04-27 214219](https://github.com/jahnvi1017/tableau_project/assets/168184461/1889aa91-1bbc-404d-9c5d-5eb01b30c245)
 
@@ -134,7 +134,7 @@ GROUP BY dea.continent
 ORDER BY SUM(dea.new_cases) DESC;
 ```
 
-OUTPUT:
+**OUTPUT:**
 
 ![Screenshot 2024-04-27 214319](https://github.com/jahnvi1017/tableau_project/assets/168184461/7bdd57ae-556d-4892-85b5-80818123d18e)
 
@@ -153,7 +153,7 @@ group by location
 order by totaldeath desc;
 ```
 
-OUTPUT:
+**OUTPUT:**
 
 ![Screenshot 2024-04-27 214444](https://github.com/jahnvi1017/tableau_project/assets/168184461/d00b699d-d968-43bd-a7b4-98ddcc0cb9d4)
 
@@ -172,7 +172,7 @@ and continent is not null
 order by Infected_Percentage DESC;
 ```
 
-OUTPUT:
+**OUTPUT:**
 
 ![Screenshot 2024-04-27 214609](https://github.com/jahnvi1017/tableau_project/assets/168184461/88bd0e0c-028f-4c1a-b8af-df8609b3a054)
 
@@ -215,7 +215,7 @@ FROM cte
 ORDER BY Cases_per_Population_Percentage DESC;
 ```
 
-OUTPUT:
+**OUTPUT:**
 
 ![Screenshot 2024-04-27 214718](https://github.com/jahnvi1017/tableau_project/assets/168184461/2f3010c5-ed98-46a6-a075-7d8a21f186ce)
 
@@ -258,7 +258,8 @@ Select *, (RollingPeopleVaccinated/Population)*100 as percentage_population_vacc
 
 From PopvsVac;
 ```
-OUTPUT:
+
+**OUTPUT:**
 
 ![Screenshot 2024-04-27 215134](https://github.com/jahnvi1017/tableau_project/assets/168184461/ab48f775-f646-4b44-a6e5-972244d287ff)
 
@@ -290,7 +291,7 @@ group by continent,location) as b
 where rn<=3;
 ```
 
-OUTPUT:
+**OUTPUT:**
 
 ![Screenshot 2024-04-27 215245](https://github.com/jahnvi1017/tableau_project/assets/168184461/fab56779-3686-4a71-b3c6-fae200d6bfbf)
 
