@@ -56,15 +56,29 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 # Sql Queries
 
 ## Here are the Sql queries and there output used to analyze covid-19 data globally.
-> select coloumns fron coviddeaths table
+> select colomns from coviddeaths table
 
 SELECT 
+
 	iso_code,
-    continent,
+ 
+        continent,
+	
 	location,
+
 	date,
+ 
 	new_cases,
+ 
 	new_deaths,
+ 
 	population
+
 FROM coviddeaths
+
 WHERE continent IS NOT NULL;
+
+OUTPUT:
+
+![Screenshot 2024-04-27 180511](https://github.com/jahnvi1017/tableau_project/assets/168184461/14dacbbd-668e-4d70-b0d3-84674ccbfa4c)
+
