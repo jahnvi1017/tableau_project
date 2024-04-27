@@ -16,9 +16,7 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 
 ### 3.Which continents have the most cases, deaths, and vaccinations?
 
-![Screenshot 2024-04-27 173133](https://github.com/jahnvi1017/tableau_project/assets/168184461/fcce2936-8896-4472-b2af-016e9f6d8214)
-
-![Cases_deaths_vacc](https://github.com/jahnvi1017/tableau_project/assets/168184461/df52fa2f-210a-4742-af3c-dd4e7534de56)
+![Cases_deaths_vacc](https://github.com/jahnvi1017/tableau_project/assets/168184461/fcce2936-8896-4472-b2af-016e9f6d8214)
 
 
 ### 4. Which month has the highest and lowest percentage of infected people in India in the year 2020?
