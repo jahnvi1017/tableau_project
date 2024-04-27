@@ -178,7 +178,7 @@ OUTPUT:
 
 ---
 
-***7.Total Number of Cases, Deaths, Vaccinations, and Population by each Country.***
+***7. Total Number of Cases, Deaths, Vaccinations, and Population by each Country.***
 ```
 WITH cte (Location, Total_cases, Total_death, Total_vaccinations, Population)as (
 
@@ -264,7 +264,7 @@ OUTPUT:
 
 ---
 
-***9. Determine the Top 3 Contries with Most Percentage of Total Cases for Each Continent***
+***9. Determine the Top 3 Countries with Most Percentage of Total Cases for Each Continent***
 ```
 select *
 
