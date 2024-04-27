@@ -1,5 +1,8 @@
-# Covid-19 Tableau_Project
-#### I have created 8 visualizations to analyze and understand the effects of Covid-19 in India and Globally.
+# Covid-19 Tableau + SQl Project
+
+# Tableau Visualizations
+
+#### I have created 8 visualizations to analyze and understand the effects of Covid-19 in India and Globally using Tableau.
 
 This is the simple demonstration of how we can create different and interesting charts, visuals and dashboards from same data.
 
@@ -50,3 +53,18 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 - [ ] (2020)
 - [x] (2021)
 
+# Sql Queries
+
+## Here are the Sql queries and there output used to analyze covid-19 data globally.
+> select coloumns fron coviddeaths table
+
+SELECT 
+	iso_code,
+    continent,
+	location,
+	date,
+	new_cases,
+	new_deaths,
+	population
+FROM coviddeaths
+WHERE continent IS NOT NULL;
