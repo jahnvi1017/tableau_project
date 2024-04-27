@@ -8,9 +8,13 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 ## The primary goal of my visualizations is to analyze:
 ### 1. What is the percentage of people infected in the year 2021?
 
+![Per_pop_Inf](https://github.com/jahnvi1017/tableau_project/assets/168184461/4294415a-bc03-4923-b2f5-7fd3023fb8ab)
+
 ![Per_pop_Inf](https://github.com/jahnvi1017/tableau_project/assets/168184461/fd90b5ca-ce15-4131-bab2-684cd41d04a3)
 
 ### 2. Which continent has the highest death count?
+
+![Highest death count](https://github.com/jahnvi1017/tableau_project/assets/168184461/319a4154-5cea-4b63-bd68-08c06883ebd5)
 
 ![Highest death count](https://github.com/jahnvi1017/tableau_project/assets/168184461/499bb67a-4c96-474e-a381-d7d596f3557a)
 
@@ -18,14 +22,9 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 
 ![Cases_deaths_vacc](https://github.com/jahnvi1017/tableau_project/assets/168184461/fcce2936-8896-4472-b2af-016e9f6d8214)
 
-
 ### 4. Which month has the highest and lowest percentage of infected people in India in the year 2020?
 
-![Screenshot 2024-04-27 173018](https://github.com/jahnvi1017/tableau_project/assets/168184461/86632683-8817-4c53-be4c-9e000850c0f3)
-
-
-![Inf_pep_india](https://github.com/jahnvi1017/tableau_project/assets/168184461/e323e96a-4fa4-49ed-9aa4-d07c9f28e5ec)
-
+![Inf_pep_india](https://github.com/jahnvi1017/tableau_project/assets/168184461/1298814d-7895-4aed-954d-0298c673d54f)
 
 
 ### 5. Top 10 countries which have the highest death per population percentage.
