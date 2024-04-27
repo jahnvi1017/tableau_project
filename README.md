@@ -56,7 +56,7 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 # Sql Queries
 
 ## Here are the Sql queries and there output used to analyze covid-19 data globally.
-> --select columns from coviddeaths table
+> -- 1.select columns from coviddeaths table
 >
 > SELECT 
 >	iso_code, continent, location, date, new_cases, new_deaths, population
@@ -68,3 +68,133 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 OUTPUT:
 
 ![Screenshot 2024-04-27 181449](https://github.com/jahnvi1017/tableau_project/assets/168184461/75fbd589-ac6b-455f-b4f9-38303a911f8b)
+---
+
+> -- 2.select coloumns fron covidvaccinations table
+>
+> SELECT iso_code, continent, location, date, new_tests, total_tests, total_vaccinations, new_vaccination, > > people_vaccinated, people_fully_vaccinated
+> FROM covidvaccinations
+> WHERE continent IS NOT NULL;
+
+OUTPUT:
+![Screenshot 2024-04-27 213914](https://github.com/jahnvi1017/tableau_project/assets/168184461/3503b255-dd34-4809-8c5a-ea2e9fac8356)
+
+> -- 3.Which continent has the highest death count
+SELECT continent, MAX(total_deaths) as HightestDeathCount
+FROM coviddeaths
+WHERE CONTINENT IS NOT NULL 
+Group by continent
+order by hightestDeathCount desc;
+
+OUTPUT:
+![Screenshot 2024-04-27 214219](https://github.com/jahnvi1017/tableau_project/assets/168184461/1889aa91-1bbc-404d-9c5d-5eb01b30c245)
+
+-- 4.find total cases, total deaths and total vaccinations by continent
+
+SELECT
+	dea.continent,
+	SUM(dea.new_cases) as Total_Cases,
+	SUM(dea.new_deaths) as Total_Death,
+	SUM(vac.total_vaccinations) as Total_vaccinations
+FROM coviddeaths dea join covidvaccinations vac
+on dea.location = vac.location
+	and dea.date = vac.date
+WHERE dea.continent IS NOT NULL
+GROUP BY dea.continent
+ORDER BY SUM(dea.new_cases) DESC;
+
+OUTPUT:
+![Screenshot 2024-04-27 214319](https://github.com/jahnvi1017/tableau_project/assets/168184461/7bdd57ae-556d-4892-85b5-80818123d18e)
+
+-- 5.Write a query to find the population of the location which has the highest deaths
+select any_value(continent) as Continent, location, any_value(population) as population, sum(total_deaths) as TotalDeath from coviddeaths
+where continent is not null
+group by location
+order by totaldeath desc;
+
+OUTPUT:
+![Screenshot 2024-04-27 214444](https://github.com/jahnvi1017/tableau_project/assets/168184461/d00b699d-d968-43bd-a7b4-98ddcc0cb9d4)
+
+-- 6.Shows what percentage of population infected with Covid
+Select Location, Date, (total_cases/population)*100 as Infected_Percentage
+From coviddeaths
+Where location like 'india'
+and continent is not null
+order by Infected_Percentage DESC;
+
+OUTPUT:
+![Screenshot 2024-04-27 214609](https://github.com/jahnvi1017/tableau_project/assets/168184461/88bd0e0c-028f-4c1a-b8af-df8609b3a054)
+
+-- 7.Total number of cases, deaths, vaccinations, and population by each country.
+
+WITH cte (Location, Total_cases, Total_death, Total_vaccinations, Population)as 
+(
+	SELECT 
+		dea.Location,
+		SUM(dea.new_cases) as Total_Cases,
+		SUM(dea.new_deaths) as Total_Death,
+		SUM(vac.total_vaccinations) as Total_vaccinations,
+		dea.population
+	FROM coviddeaths dea join covidvaccinations vac
+on dea.location = vac.location
+	and dea.date = vac.date
+	WHERE dea.continent IS NOT NULL
+	GROUP BY dea.location, dea.population
+)
+SELECT *,
+ROUND(100.0 * Total_Cases/population,2) as Cases_per_Population_Percentage,
+	ROUND(100.0 * Total_Death/ population,2) as Death_per_Population_Percentage,
+	ROUND(100.0 * Total_vaccinations/ population,2) as Vaccination_per_Population_Percentage
+
+FROM cte
+
+ORDER BY Cases_per_Population_Percentage DESC;
+
+OUTPUT:
+![Screenshot 2024-04-27 214718](https://github.com/jahnvi1017/tableau_project/assets/168184461/2f3010c5-ed98-46a6-a075-7d8a21f186ce)
+
+-- 8.Shows Percentage of Population that has recieved at least one Covid Vaccine
+
+With PopvsVac (Row_Num ,Continent, Location, Date, Population, people_vaccinated, RollingPeopleVaccinated)
+as
+(
+Select 
+row_number() over(partition by location order by date) as Row_Num, 
+dea.Continent, 
+dea.Location, 
+dea.Date, 
+dea.Population, 
+vac.People_Vaccinated
+, SUM(cast(vac.people_vaccinated as unsigned)) OVER (Partition by dea.Location Order by dea.continent, dea.date) as RollingPeopleVaccinated 
+From CovidDeaths dea
+Join CovidVaccinations vac
+	On dea.location = vac.location
+	and dea.date = vac.date
+where dea.continent is not null 
+)
+Select *, (RollingPeopleVaccinated/Population)*100 as percentage_population_vaccinated
+From PopvsVac;
+
+OUTPUT:
+
+![Screenshot 2024-04-27 215134](https://github.com/jahnvi1017/tableau_project/assets/168184461/ab48f775-f646-4b44-a6e5-972244d287ff)
+
+-- 9.Determine the top 3 contries with most percentage of total cases for each countinent
+
+select *
+from
+(select *, 
+rank() over(partition by continent order by Total_cases_percentage desc) as rn
+from
+(
+select continent, location, sum(total_cases/population) as Total_cases_percentage
+from coviddeaths
+where continent is not null
+group by continent,location
+order by Total_cases_percentage desc) as a
+group by continent,location) as b
+where rn<=3;
+
+OUTPUT:
+![Screenshot 2024-04-27 215245](https://github.com/jahnvi1017/tableau_project/assets/168184461/fab56779-3686-4a71-b3c6-fae200d6bfbf)
+
