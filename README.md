@@ -67,4 +67,4 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 
 OUTPUT:
 
-![Screenshot 2024-04-27 180806](https://github.com/jahnvi1017/tableau_project/assets/168184461/eeb91b39-f2a4-41ac-85aa-526212e383fb)
+![Screenshot 2024-04-27 181449](https://github.com/jahnvi1017/tableau_project/assets/168184461/75fbd589-ac6b-455f-b4f9-38303a911f8b)
