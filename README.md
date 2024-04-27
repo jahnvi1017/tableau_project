@@ -45,13 +45,13 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 
 ### 8. The map which shows deaths in the year 2021 by countries.
 ![Deaths_2020](https://github.com/jahnvi1017/tableau_project/assets/168184461/233e2a41-4d8a-4b05-93dd-e879ba7f4ca3)
-**- [x] (2020)**
-**- [ ] (2021)**
+- [x] (2020)
+- [ ] (2021)
 
 ![Deaths_2021](https://github.com/jahnvi1017/tableau_project/assets/168184461/235e218b-f064-497c-ab35-f08a591627fb)
 
-**- [ ] (2020)**
-**- [x] (2021)**
+- [ ] (2020)
+- [x] (2021)
 
 # Sql Queries
 
