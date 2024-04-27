@@ -258,7 +258,7 @@ OUTPUT:
 
 ---
 
-***-- 9.Determine the top 3 contries with most percentage of total cases for each countinent***
+***-- 9.Determine the Top 3 contries with most percentage of total cases for each countinent***
 ```
 select *
 
