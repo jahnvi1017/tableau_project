@@ -10,5 +10,8 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 
 ![Per_pop_Inf](https://github.com/jahnvi1017/tableau_project/assets/168184461/fd90b5ca-ce15-4131-bab2-684cd41d04a3)
 
+### 2. Which continent has the highest death count?
+
+![Highest death count](https://github.com/jahnvi1017/tableau_project/assets/168184461/499bb67a-4c96-474e-a381-d7d596f3557a)
 
 
