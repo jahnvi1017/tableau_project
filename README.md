@@ -45,7 +45,7 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 - [x] (2020)
 - [ ] (2021)
 
-![Deaths_2021](https://github.com/jahnvi1017/tableau_project/assets/168184461/dfbf94e2-f18a-4c51-bc4c-6333c258a9fa)
+![Deaths_2021](https://github.com/jahnvi1017/tableau_project/assets/168184461/235e218b-f064-497c-ab35-f08a591627fb)
 
 - [ ] (2020)
 - [x] (2021)
