@@ -58,7 +58,7 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 ## Here are the Sql queries and there output used to analyze covid-19 data globally.
 
 
-***-- 1.select columns from coviddeaths table***
+***1. Select Columns from `Coviddeaths` Table***
 ```
 SELECT 
 iso_code, continent, location, date, new_cases, new_deaths, population
@@ -75,7 +75,7 @@ OUTPUT:
 ---
 
 
-***-- 2.select coloumns fron covidvaccinations table***
+***2. Select columns from `Covidvaccinations` Table***
 ```
 SELECT iso_code, continent, location, date, new_tests, total_tests, total_vaccinations, new_vaccination, people_vaccinated, people_fully_vaccinated
 
@@ -89,7 +89,7 @@ OUTPUT:
 
 ---
 
-***-- 3.Which continent has the highest death count***
+***3. Which Continent has the Highest Death Count***
 ```
 SELECT continent, MAX(total_deaths) as HightestDeathCount
 
@@ -107,7 +107,7 @@ OUTPUT:
 
 ---
 
-***-- 4.find total cases, total deaths and total vaccinations by continent***
+***4. Find Total Cases, Total Deaths and Total Vaccinations by Continent***
 ```
 SELECT
 
@@ -137,7 +137,7 @@ OUTPUT:
 
 ---
 
-***-- 5.Write a query to find the population of the location which has the highest deaths***
+***5. Write a Query to find the Population of the Location which has the Highest Deaths***
 ```
 select any_value(continent) as Continent, location, any_value(population) as population,
 
@@ -155,7 +155,7 @@ OUTPUT:
 
 ---
 
-***-- 6.Shows what percentage of population infected with Covid***
+***6. Shows What Percentage of Population is Infected with Covid***
 ```
 Select Location, Date, (total_cases/population)*100 as Infected_Percentage
 
@@ -173,7 +173,7 @@ OUTPUT:
 
 ---
 
-***-- 7.Total number of cases, deaths, vaccinations, and population by each country.***
+***7.Total Number of Cases, Deaths, Vaccinations, and Population by each Country.***
 ```
 WITH cte (Location, Total_cases, Total_death, Total_vaccinations, Population)as (
 
@@ -215,7 +215,7 @@ OUTPUT:
 
 ---
 
-***-- 8.Shows Percentage of Population that has recieved at least one Covid Vaccine***
+***8. Shows Percentage of Population that has Recieved at Least One Covid Vaccine***
 ```
 With PopvsVac (Row_Num ,Continent, Location, Date, Population, people_vaccinated,
 
@@ -258,7 +258,7 @@ OUTPUT:
 
 ---
 
-***-- 9.Determine the Top 3 contries with most percentage of total cases for each countinent***
+***9. Determine the Top 3 Contries with Most Percentage of Total Cases for Each Continent***
 ```
 select *
 
