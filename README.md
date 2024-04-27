@@ -59,19 +59,7 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 > select colomns from coviddeaths table
 >
 > SELECT 
->	iso_code,
->
->       continent,
->	
->	location,
->
->	date,
->
->	new_cases,
->
->	new_deaths,
-> 
->	population
+>	iso_code, continent, location, date, new_cases, new_deaths, population
 >
 > FROM coviddeaths
 >
