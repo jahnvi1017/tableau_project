@@ -57,9 +57,9 @@ The following questions we asked and then created visuals from Covid-19 Dataset.
 
 ## Here are the Sql queries and there output used to analyze covid-19 data globally.
 
-```
--- 1.select columns from coviddeaths table
 
+***-- 1.select columns from coviddeaths table***
+```
 SELECT 
 iso_code, continent, location, date, new_cases, new_deaths, population
 
@@ -74,9 +74,9 @@ OUTPUT:
 
 ---
 
-```
-***-- 2.select coloumns fron covidvaccinations table***
 
+***-- 2.select coloumns fron covidvaccinations table***
+```
 SELECT iso_code, continent, location, date, new_tests, total_tests, total_vaccinations, new_vaccination, people_vaccinated, people_fully_vaccinated
 
 FROM covidvaccinations
@@ -89,9 +89,8 @@ OUTPUT:
 
 ---
 
-```
 ***-- 3.Which continent has the highest death count***
-
+```
 SELECT continent, MAX(total_deaths) as HightestDeathCount
 
 FROM coviddeaths
@@ -108,9 +107,8 @@ OUTPUT:
 
 ---
 
-```
 ***-- 4.find total cases, total deaths and total vaccinations by continent***
-
+```
 SELECT
 
 dea.continent,
@@ -139,9 +137,8 @@ OUTPUT:
 
 ---
 
-```
 ***-- 5.Write a query to find the population of the location which has the highest deaths***
-
+```
 select any_value(continent) as Continent, location, any_value(population) as population,
 
 sum(total_deaths) as TotalDeath from coviddeaths
@@ -158,9 +155,8 @@ OUTPUT:
 
 ---
 
-```
 ***-- 6.Shows what percentage of population infected with Covid***
-
+```
 Select Location, Date, (total_cases/population)*100 as Infected_Percentage
 
 From coviddeaths
@@ -177,9 +173,8 @@ OUTPUT:
 
 ---
 
-```
 ***-- 7.Total number of cases, deaths, vaccinations, and population by each country.***
-
+```
 WITH cte (Location, Total_cases, Total_death, Total_vaccinations, Population)as (
 
 SELECT
@@ -220,9 +215,8 @@ OUTPUT:
 
 ---
 
-```
 ***-- 8.Shows Percentage of Population that has recieved at least one Covid Vaccine***
-
+```
 With PopvsVac (Row_Num ,Continent, Location, Date, Population, people_vaccinated,
 
 RollingPeopleVaccinated)as(
@@ -263,8 +257,9 @@ OUTPUT:
 ![Screenshot 2024-04-27 215134](https://github.com/jahnvi1017/tableau_project/assets/168184461/ab48f775-f646-4b44-a6e5-972244d287ff)
 
 ---
-***-- 9.Determine the top 3 contries with most percentage of total cases for each countinent***
 
+***-- 9.Determine the top 3 contries with most percentage of total cases for each countinent***
+```
 select *
 
 from
