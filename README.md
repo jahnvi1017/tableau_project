@@ -1,4 +1,4 @@
-# tableau_project
+# Covid-19 Tableau_Project
 #### I have created 8 visualizations to analyze and understand the effects of Covid-19 in India and Globally.
 
 This is the simple demonstration of how we can create different and interesting charts, visuals and dashboards from same data.
