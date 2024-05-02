@@ -2,13 +2,12 @@
 
 # Tableau Visualizations
 
-#### I have created 8 visualizations to analyze and understand the effects of Covid-19 in India and Globally using Tableau.
+#### I have created this tableau + SQL project to analyze and understand the effects of Covid-19 in India and Globally using Tableau.
 
-This is the simple demonstration of how we can create different and interesting charts, visuals and dashboards from same data.
-
-The following questions we asked and then created visuals from Covid-19 Dataset.
+In Tableau I have created 8 vizualizations that simply demonstrate how we can create different and interesting charts, visuals and dashboards from same data.
 
 ## The primary goal of my visualizations is to analyze:
+
 ### 1. What is the percentage of people infected in the year 2021?
 
 ![Per_pop_Inf](https://github.com/jahnvi1017/tableau_project/assets/168184461/4294415a-bc03-4923-b2f5-7fd3023fb8ab)
