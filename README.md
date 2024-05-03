@@ -74,6 +74,7 @@ Using Tableau I have created 8 vizualizations that demonstrate how we can create
 - Clauses
 - Sub-query
 
+
 ***1. Select Columns from `Coviddeaths` Table***
 ```
 SELECT 
