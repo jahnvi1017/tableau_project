@@ -4,7 +4,7 @@
 
 #### I have created this tableau + SQL project to analyze and understand the effects of Covid-19 in India and Globally using Tableau.
 
-Using Tableau I have created 8 vizualizations that simply demonstrate how we can create different and interesting charts, visuals and dashboards from same data.
+Using Tableau I have created 8 vizualizations that demonstrate how we can create different and interesting charts, visuals and dashboards from same data.
 
 ## The primary goal of my visualizations is to analyze:
 
@@ -66,7 +66,13 @@ Using Tableau I have created 8 vizualizations that simply demonstrate how we can
 
 ## Here are the Sql queries and there output used to analyze covid-19 data globally.
 
-## Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Converting Data Types
+## Skills used: 
+- Joins
+- CTE's
+- Windows Functions
+- Aggregate Functions
+- Clauses
+- Sub-query
 
 ***1. Select Columns from `Coviddeaths` Table***
 ```
