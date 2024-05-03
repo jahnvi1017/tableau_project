@@ -4,7 +4,7 @@
 
 #### I have created this tableau + SQL project to analyze and understand the effects of Covid-19 in India and Globally using Tableau.
 
-In Tableau I have created 8 vizualizations that simply demonstrate how we can create different and interesting charts, visuals and dashboards from same data.
+Using Tableau I have created 8 vizualizations that simply demonstrate how we can create different and interesting charts, visuals and dashboards from same data.
 
 ## The primary goal of my visualizations is to analyze:
 
